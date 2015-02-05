@@ -12,7 +12,7 @@ html(lang="en")
     .reveal
       .slides
         +titleSlide({title: "Audio Snob",subtitle: "The finer points of Buying a HiFi"})
-        +olSlide("Overview", ["Power", "Aplification", "Fidelity"])
+        +olSlide("Overview", ["Power", "Amplification", "Fidelity"])
         +slideGroup
           +bigTitleSlide("Power")
           +littleTitleSlide("DC Transformers")
@@ -32,6 +32,21 @@ html(lang="en")
                 The art of winding a good box transfomer can often far outpace those of a Toroidol.
                 Since both are made by machines now the issue is probably moot
 
-          +bigTitleSlide()
+        +slideGroup
+          +bigTitleSlide("Amplification")
+          //Tubes!
+          //Transistors
+        +slideGroup
+          +bigTitleSlide("Fidelity")
+          //SNR
+          //Total Harmonic Distortion
+        +slideGroup
+          +bigTitleSlide("Speakers")
+          +littleTitleSlide("The Story of Impedence")
+          //http://www.digitaltrends.com/home-theater/how-to-buy-a-receiver-the-ultimate-buying-guide/
+          //Silly thick speaker wires
+        +slideGroup
+          +bigTitleSlide("Alternatives")
+
 
     include bower_components/RevealJade/shared/footer
