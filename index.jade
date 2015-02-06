@@ -12,7 +12,7 @@ html(lang="en")
     .reveal
       .slides
         +titleSlide({title: "Audio Snob",subtitle: "The finer points of Buying a HiFi"})
-        +olSlide("Overview", ["Power", "Amplification", "Fidelity"])
+        +olSlide("Overview", ["Power", "Amplification", "Fidelity", "Reciever", "Speakers"])
         +slideGroup
           +bigTitleSlide("Power")
           +littleTitleSlide("DC Transformers")
@@ -34,12 +34,48 @@ html(lang="en")
 
         +slideGroup
           +bigTitleSlide("Amplification")
-          //Tubes!
-          //Transistors
+            :markdown
+              - Vacuum Tubes (YAY!)
+              - Solid State (Transistors)
+
+          +bigTitleSlide("Tubes!")
+            :markdown
+              - Thermionic emission
+              - Simple form is a Diode
+              - Amplifiers use Triodes (http://en.wikipedia.org/wiki/Lee_de_Forest)
+
+            +speakerNotes
+              :markdown
+                - Thermionic emission - Edison effect - emission of electrons from a hot cathode into a vacuum to a positively charged anode
+                - Vacuum Tubes have a grid
+                - Often Called a Valve
+                - We pass high current through the cathode and the grid opens and closes based upon the signal to control the flow of electrons
+
+          +bigTitleSlide("Transistors")
+            :markdown
+              - Cheap for low voltage under ~ 2000 Watts
+              - Very good quality
+
         +slideGroup
           +bigTitleSlide("Fidelity")
-          //SNR
-          //Total Harmonic Distortion
+            :markdown
+              accuracy; exactness;
+
+          +bigTitleSlide("Measurement")
+            :markdown
+              - THD+N: Total Harmonic Distortion + Noise
+              - Frequency response: Signal level variation vs output
+              - SNR: Signal to Noise Ratio
+              - Crosstalk: Noise bleed between signal paths
+              - Dynamic range: Variant of THD for digital recievers
+
+            +speakerNotes
+              :markdown
+                - SNR is all relative to the input strength and output intensity
+                - THD is the direct measure of Fidelity
+                - Frequency Response is measure of flatness
+
+
         +slideGroup
           +bigTitleSlide("Speakers")
           +littleTitleSlide("The Story of Impedence")
