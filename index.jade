@@ -12,7 +12,7 @@ html(lang="en")
     .reveal
       .slides
         +titleSlide({title: "Audio Snob",subtitle: "The finer points of Buying a HiFi"})
-        +olSlide("Overview", ["Power", "Amplification", "Fidelity", "Reciever", "Speakers"])
+        +olSlide("Overview", ["Power", "Amplification", "Fidelity", "Reciever", "Speakers", "Components"])
         +slideGroup
           +bigTitleSlide("Power")
           +littleTitleSlide("DC Transformers")
@@ -75,6 +75,32 @@ html(lang="en")
                 - THD is the direct measure of Fidelity
                 - Frequency Response is measure of flatness
 
+          +littleTitleSlide("Frequency Response")
+            img(src="assets/clipped_wave.jpeg")
+
+        +slideGroup
+          +bigTitleSlide("The Reciever")
+            :markdown
+              ### Its all about design
+
+          +littleTitleSlide("Whats in there")
+            img(src='assets/s7-lg.jpg')
+
+          +littleTitleSlide("Simple is better")
+            img(src='assets/nad_c745bee_inside.jpg')
+
+        +slideGroup
+          +bigTitleSlide("Components")
+            :markdown
+              - Phonograph (Record player)
+              - MP3 Player
+              - Digital Bridge
+
+          +bigTitleSlide("Phonograph")
+            :markdown
+              - Requires Pre-amp
+              - Operates at -30db
+              - Is the reason we worry about SNR and THD
 
         +slideGroup
           +bigTitleSlide("Speakers")
